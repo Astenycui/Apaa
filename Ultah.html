@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffebee;
+            margin: 0;
+            padding: 0;
+            color: #d81b60;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fe9ec0;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #c2185b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .photo-frame {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .photo-frame img {
+            max-width: 100%;
+            border-radius: 8px;
+            border: 5px solid #f8bbd0;
+        }
+        
+        .message {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .wishes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .wish-card {
+            background-color: white;
+            width: 45%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .wish-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .gallery img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 8px;
+            border: 3px solid #f8bbd0;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        
+        footer {
+            background-color: #f8bbd0;
+            padding: 15px;
+            border-radius: 0 0 15px 15px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .hearts {
+            font-size: 1.5em;
+            color: #e91e63;
+            animation: pulse 1s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        
+        .cake {
+            font-size: 2em;
+            margin: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .balloon {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            background-color: #f8bbd0;
+            border-radius: 50%;
+            animation: float-up 8s ease-in infinite;
+            opacity: 0.7;
+        }
+        
+        @keyframes float-up {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+        
+        .music-player {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloons-container"></div>
+    
+    <div class="container">
+        <header>
+            <div class="cake">🎂</div>
+            <h1>Happy Birthday Elan!</h1>
+            <div class="cake">🎉</div>
+            <p>Hari Spesiaal untuk si bontot!</p>
+        </header>
+        
+        
+        <div class="music-player">
+            <h3>Putar Lagu Ulang Tahun dan Scroll Kebawah</h3>
+            <audio controls>
+                <source src="Lagu tahun.unknown" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+        </div>
+        <div class="photo-frame">
+            <img src="foto5.jpg" alt="Foto Ulang Tahun">
+        </div>
+
+        <div class="message">
+            <p>Aloo Adek Elann,</p>
+            <p>Selamat ulang tahun yang ke-18 ya! Semoga di usia yang baru ini elan diberikan kesehatan, kebahagiaan, dan semua keinginan adek terkabul.</p>
+            <p>Teruslah menjadi Elan yang luar biasa!</p>
+            <p class="hearts">❤️❤️❤️</p>
+        </div>
+        
+        <div class="wishes">
+            <div class="wish-card">
+                <h3>Semoga...</h3>
+                <p>Semoga tahun ini membawa banyak kebahagiaan, petualangan baru, dan kenangan indah!</p>
+            </div>
+            <div class="wish-card">
+                <h3>Harapan</h3>
+                <p>Harapan kami adalah semoga semua impian dan cita-cita perlahan menjadi kenyataan!</p>
+            </div>
+        </div>
+        
+        <h2>Beberapa kenangan</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Kenangan 1">
+            <img src="foto2.jpg" alt="Kenangan 2">
+            <img src="foto3.jpg" alt="Kenangan 3">
+        </div>
+        
+        <footer>
+            <p>Dibuat dengan ❤️ oleh kak Selsi, kak Anik, dan Mom Yayas</p>
+            <p>15 05 2025 - Selamat Ulang Tahun!</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Membuat balon
+        function createBalloons() {
+            const container = document.getElementById('balloons-container');
+            const colors = ['#f8bbd0', '#f48fb1', '#f06292', '#ec407a', '#e91e63', '#d81b60'];
+            
+            for (let i = 0; i < 15; i++) {
+                const balloon = document.createElement('div');
+                balloon.className = 'balloon';
+                
+                // Posisi acak
+                const left = Math.random() * 100;
+                balloon.style.left = `${left}vw`;
+                
+                // Warna acak
+                const colorIndex = Math.floor(Math.random() * colors.length);
+                balloon.style.backgroundColor = colors[colorIndex];
+                
+                // Ukuran acak
+                const size = 30 + Math.random() * 30;
+                balloon.style.width = `${size}px`;
+                balloon.style.height = `${size * 1.5}px`;
+                
+                // Animasi dengan delay acak
+                balloon.style.animationDuration = `${5 + Math.random() * 10}s`;
+                balloon.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(balloon);
+            }
+        }
+        
+        // Jalankan saat halaman dimuat
+        window.onload = function() {
+            createBalloons();
+            
+            // Tambahkan konfeti saat diklik
+            document.body.addEventListener('click', function() {
+                createBalloons();
+            });
+        };
+    </script>
+</body>
+</html>
